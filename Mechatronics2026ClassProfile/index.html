@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tron 2022 Class Profile</title>
+
+    <!-- Plotly for charts -->
+    <script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
+
+    <style>
+        /* =========================
+           GENERAL
+           ========================= */
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background: white;
+            color: #222;
+            font-family: Georgia, "Times New Roman", serif;
+        }
+
+
+        /* =========================
+           NAVIGATION
+           ========================= */
+
+        .navbar {
+            width: 100%;
+            padding: 18px 18px 15px;
+
+            display: flex;
+            align-items: center;
+            gap: 24px;
+
+            white-space: nowrap;
+        }
+
+        .site-title {
+            font-size: 18px;
+            color: #111;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 18px;
+            flex-wrap: wrap;
+        }
+
+        .nav-links a {
+            color: #555;
+            text-decoration: none;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+        }
+
+        .nav-links a:hover {
+            color: #111;
+        }
+
+
+        /* =========================
+           MAIN CONTENT
+           ========================= */
+
+        main {
+            width: min(1135px, calc(100% - 40px));
+            margin: 70px auto 0;
+        }
+
+
+        /* =========================
+           SECTIONS
+           ========================= */
+
+        .survey-section {
+            border-bottom: 2px solid #aaa;
+            padding-bottom: 8px;
+            margin-bottom: 0;
+        }
+
+        .survey-section h1 {
+            margin: 0 0 28px 18px;
+
+            font-size: 30px;
+            font-weight: normal;
+            line-height: 1.2;
+        }
+
+        .section-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 78px;
+
+            align-items: stretch;
+        }
+
+
+        /* =========================
+           CHARTS
+           ========================= */
+
+        .chart-container {
+            min-width: 0;
+            height: 390px;
+        }
+
+        .bar-chart-container {
+            height: 430px;
+        }
+
+
+        /* =========================
+           EXPLANATION BOX
+           ========================= */
+
+        .description {
+            background: #ccc;
+
+            border-radius: 8px;
+
+            min-height: 390px;
+            padding: 24px 14px;
+
+            color: #3f3f3f;
+
+            font-family: Arial, sans-serif;
+            font-size: 17px;
+            line-height: 1.55;
+        }
+
+
+        /* =========================
+           RESPONSIVE
+           ========================= */
+
+        @media (max-width: 850px) {
+
+            .navbar {
+                align-items: flex-start;
+                flex-direction: column;
+            }
+
+            .nav-links {
+                gap: 10px 16px;
+            }
+
+            main {
+                width: calc(100% - 30px);
+                margin-top: 40px;
+            }
+
+            .section-content {
+                grid-template-columns: 1fr;
+                gap: 25px;
+            }
+
+            .description {
+                min-height: auto;
+            }
+
+            .survey-section h1 {
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <!-- =========================
+         NAVIGATION
+         ========================= -->
+
+    <header class="navbar">
+
+        <div class="site-title">
+            Tron 2022 Class Profile
+        </div>
+
+        <nav class="nav-links">
+            <a href="#">Demographics</a>
+            <a href="#">School</a>
+            <a href="#">Co-op</a>
+            <a href="#">Mental Health</a>
+            <a href="#">Lifestyle</a>
+            <a href="#">Sex, Drugs &amp; Relationships</a>
+            <a href="#">Future Plans &amp; Advice</a>
+            <a href="#">Conclusion</a>
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <!-- =========================
+             RESPONSE RATE
+             ========================= -->
+
+        <section class="survey-section">
+
+            <h1>Response Rate</h1>
+
+            <div class="section-content">
+
+                <div
+                    id="response-chart"
+                    class="chart-container">
+                </div>
+
+                <div class="description">
+                    52% of the graduating class responded
+                    to the main survey. Thank you all!
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             BIRTH YEAR
+             ========================= -->
+
+        <section class="survey-section">
+
+            <h1>Birth Year</h1>
+
+            <div class="section-content">
+
+                <div
+                    id="birth-year-chart"
+                    class="chart-container bar-chart-container">
+                </div>
+
+                <div class="description">
+                    Most of us were born right before Y2K in
+                    the last year of the 20th century!
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script>
+
+        /* =========================================
+           RESPONSE RATE PIE CHART
+           ========================================= */
+
+        const responseData = [
+            {
+                values: [51.9, 48.1],
+
+                labels: [
+                    "Responded",
+                    "Did Not Respond"
+                ],
+
+                type: "pie",
+
+                marker: {
+                    colors: [
+                        "#5b0792",
+                        "#398aaa"
+                    ]
+                },
+
+                textinfo: "percent",
+
+                textfont: {
+                    color: "white",
+                    size: 12
+                },
+
+                hoverinfo: "label+percent",
+
+                sort: false,
+
+                direction: "clockwise",
+
+                rotation: 90
+            }
+        ];
+
+
+        const responseLayout = {
+
+            showlegend: true,
+
+            legend: {
+                x: 0.82,
+                y: 0.92,
+
+                font: {
+                    family: "Georgia, Times New Roman, serif",
+                    size: 12,
+                    color: "#111"
+                }
+            },
+
+            margin: {
+                l: 40,
+                r: 20,
+                t: 0,
+                b: 10
+            },
+
+            paper_bgcolor: "rgba(0,0,0,0)",
+
+            plot_bgcolor: "rgba(0,0,0,0)"
+        };
+
+
+        Plotly.newPlot(
+            "response-chart",
+            responseData,
+            responseLayout,
+            {
+                responsive: true,
+                displayModeBar: false
+            }
+        );
+
+
+        /* =========================================
+           BIRTH YEAR BAR CHART
+           
+           Replace these numbers with the actual
+           survey data later.
+           ========================================= */
+
+        const birthYearData = [
+            {
+                x: [
+                    "1997",
+                    "1998",
+                    "1999",
+                    "2000",
+                    "2001",
+                    "2002",
+                    "2003"
+                ],
+
+                y: [
+                    1,
+                    3,
+                    15,
+                    84,
+                    18,
+                    3,
+                    1
+                ],
+
+                type: "bar",
+
+                marker: {
+                    color: "#5b0792"
+                }
+            }
+        ];
+
+
+        const birthYearLayout = {
+
+            margin: {
+                l: 65,
+                r: 10,
+                t: 10,
+                b: 65
+            },
+
+            paper_bgcolor: "rgba(0,0,0,0)",
+
+            plot_bgcolor: "#eeeeee",
+
+            font: {
+                family: "Arial, sans-serif",
+                size: 12
+            },
+
+            xaxis: {
+                title: "",
+
+                gridcolor: "white",
+
+                zeroline: false
+            },
+
+            yaxis: {
+                title: "Responses",
+
+                gridcolor: "white",
+
+                zeroline: false,
+
+                rangemode: "tozero"
+            },
+
+            bargap: 0.08,
+
+            showlegend: false
+        };
+
+
+        Plotly.newPlot(
+            "birth-year-chart",
+            birthYearData,
+            birthYearLayout,
+            {
+                responsive: true,
+                displayModeBar: false
+            }
+        );
+
+    </script>
+
+</body>
+</html>
