@@ -16,7 +16,7 @@
             margin: 0;
             background: white;
             color: #222;
-            font-family: Georgia, "Times New Roman", serif;
+            font-family: Calibri, Arial, sans-serif;
         }
 
         /* =========================
@@ -58,8 +58,7 @@
         .nav-links a {
             color: #555;
             text-decoration: none;
-
-            font-family: Arial, sans-serif;
+            font-family: "Calibri", Arial, sans-serif; 
             font-size: 14px;
         }
 
@@ -90,7 +89,7 @@
         .intro-text {
             color: #555;
 
-            font-family: Arial, sans-serif;
+            font-family: "Calibri" , Arial, sans-serif;
             font-size: 17px;
             line-height: 1.55;
 
@@ -246,6 +245,77 @@
             background: #555;
         }
 
+        /* =========================
+   IMAGE CAROUSEL
+   ========================= */
+
+.photo-carousel {
+    width: 100%;
+    margin: 50px 0;
+}
+
+.carousel {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.carousel-image-container {
+    flex: 1;
+    min-width: 0;
+    position: relative;
+}
+
+.carousel-image-container img {
+    display: block;
+
+    width: 100%;
+    height: 550px;
+
+    object-fit: cover;
+
+    border-radius: 8px;
+}
+
+.carousel-caption {
+    position: absolute;
+
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    padding: 14px 18px;
+
+    background: rgba(0, 0, 0, 0.65);
+    color: white;
+
+    border-radius: 0 0 8px 8px;
+
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+}
+
+.carousel-button {
+    width: 42px;
+    height: 42px;
+
+    flex-shrink: 0;
+
+    border: 1px solid #ccc;
+    border-radius: 50%;
+
+    background: white;
+    color: #333;
+
+    font-size: 20px;
+
+    cursor: pointer;
+}
+
+.carousel-button:hover {
+    background: #f3f3f3;
+}
+
 
 
         /* =========================
@@ -316,24 +386,7 @@
     <main>
 
         <div class="intro">
-
-            <div class="intro-text">
-
-                Welcome to the Tron 2026 Class Profile!
-
-                The Mechatronics Engineering program at the
-                University of Waterloo is a program aiming to give
-                a wide base of knowledge in mechanical engineering,
-                electrical engineering, programming and real-time control. 
-
-            </div>
-
-
-            <!-- =========================
-                 WELCOME
-                 ========================= -->
-
-            <section class="welcome">
+            <!-- <section class="welcome">
 
                 <h1>
                     Tron 2026 Class Profile
@@ -345,7 +398,56 @@
                     collected through a class survey.
                 </p>
 
-            </section>
+            </section> -->
+
+            <div class="intro-text">
+
+                Welcome to the Tron 2026 Class Profile!
+
+                The Mechatronics Engineering program at the
+                University of Waterloo is a program aiming to give
+                a wide base of knowledge in mechanical engineering,
+                electrical engineering, programming and real-time control. Check out the 
+                 carousel below for a little trip down memory lane. A bit front heavy on the Stream 8 stuff, 
+                 but it evens out a bit later.
+
+            </div>
+
+
+            <!-- =========================
+                 WELCOME
+                 ========================= -->
+
+            
+            <section class="photo-carousel">
+
+    <div class="carousel">
+
+        <button class="carousel-button carousel-prev" onclick="changeSlide(-1)">
+            ←
+        </button>
+
+        <div class="carousel-image-container">
+
+            <img
+                id="carousel-image"
+                src="photos/winter2026.jpg"
+                alt="Class of 2026"
+            >
+
+            <div id="carousel-caption" class="carousel-caption">
+                Our Class in Winter of 2026
+            </div>
+
+        </div>
+
+        <button class="carousel-button carousel-next" onclick="changeSlide(1)">
+            →
+        </button>
+
+    </div>
+
+</section>
 
 
             <!-- =========================
@@ -372,8 +474,8 @@
                 </h2>
 
                 <p>
-                    This profile was heavily inspired by previous profiles, especially the Tron 2022 Class Profile. I even took this part from it. 
-                    I would like to thank Jared for getting a good head start on the google form, and being generous enough to let me use it to build off of.<br> I'd also like to thank Caleb, Zara, and Phoebe for helping me get the word out about the initial google form, as well as the group of people that kept pinging me on discord asking when I'd be releasing it. Now. I'm releasing it now.
+                    This profile was heavily inspired by previous profiles, especially the <a href="https://nielmistry.github.io/tron2022classprofile/index.html">Tron 2022 Class Profile</a>. If you've seen that, this layout will look pretty familiar. I even took this part from it. 
+                    I would like to thank Jared for getting a good head start on the google form, and being generous enough to let me use it to build off of.<br><br> I'd also like to thank Caleb, Zara, and Phoebe for helping me get the word out about the initial google form, as well as the group of people that kept pinging me on discord asking when I'd be releasing it. Now. I'm releasing it now.
 
                 <br><br>To the class: Thanks for spending 5 Years with me. It gets rocky sometimes, but we got through, and now we can all do IOP from memory. <br>To everyone else: Enjoy looking through our class profile! Hopefully it can offer you some insight into our lives, and the program as a whole.
                 </p>
@@ -386,7 +488,7 @@
 
                 <p>
                     I'm not really much of a web developer, nor do I regularly make surveys like this, so this took a
-                    STUPID amount of time for me to figure out. If you are a student and you want to do something like this, 
+                    STUPID amount of time for me to do. If something is broken, whoopsie. Hit me up on discord and I might fix it.<br> If you are a student and you want to do something like this, 
                     hit me up at wt2mccut@uwaterloo.ca and I'll give you the necessary google form and disgusting python file
                      I put together for this.
                      Despite what everyone I spoke to suggested, this was not a claude one-shot. I put all 120-something graphs together by hand. 
@@ -516,7 +618,9 @@
 
 
     </main>
+<script src="js/carousel.js"></script>
 
 </body>
+
 
 </html>
