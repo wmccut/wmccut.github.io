@@ -1,6 +1,6 @@
 const carouselImages = [
     {
-        src: "photos/winter2026.jpg",
+        src: "photos/winter2026.JPG",
         caption: "Hey, it's all of us again!"
     },
     {
@@ -20,15 +20,15 @@ const carouselImages = [
         caption: "A cheeky little pic with Nassar - December 2022"
     },
     {
-        src: "photos/tronfiresummer2023.jpg",
+        src: "photos/tronfiresummer2023.JPG",
         caption: "Summer 2023 Tronfire! 2B was Stream 8's only summer term."
     },
     {
-        src: "photos/august2023.jpg",
+        src: "photos/august2023.JPG",
         caption: "Stream 8 post-exams picture - August 2023"
     },
     {
-        src: "photos/april2024.jpg",
+        src: "photos/april2024.JPG",
         caption: "Stream 8 post-exams picture - April 2024"
     },
     {
