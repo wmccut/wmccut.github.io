@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tron 2026 Class Profile</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Plotly for charts -->
+    <script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
+</head>
+
+
+<body>
+
+    <!-- =========================
+         NAVIGATION
+         ========================= -->
+
+    <header class="navbar">
+
+    <a class="site-title" href="index.html">
+        Tron 2026 Class Profile
+    </a>
+
+    <nav class="nav-links">
+
+        <a href="demographics.html">Demographics</a>
+        <a href="school.html">School</a>
+        <a href="coop.html">Co-op</a>
+        <!-- <a href="mental-health.html">Mental Health</a> -->
+        <!-- <a href="lifestyle.html">Lifestyle</a> -->
+        <a href="relationships.html">Lifestyle &amp; Relationships</a>
+        <a href="future-plans.html">Future Plans 🤖</a>
+        <a href="conclusion.html">Conclusions &amp; Advice</a>
+
+    </nav>
+
+</header>
+
+
+
+    <main>
+
+    <!-- =========================
+         PASTE ALL CHART BLOCKS HERE
+         ========================= -->
+<section class="survey-section">
+<h1>Post-Graduation Status (Multi-Select)</h1>
+<div class="section-content">
+   <div
+      class="chart-container bar-chart-container"
+      data-chart="gradStatus">
+   </div>
+   <div class="description">
+      Most of the respondents seem to have a job lined up.
+   </div>
+</div>
+</section>
+ 
+<section class="survey-section">
+<h1>If you have a full time job lined up, was it from a previous Co-op?</h1>
+<div class="section-content">
+   <div
+      class="chart-container"
+      data-chart="coopJobPipeline">
+   </div>
+   <div class="description">
+      It's a tricky job market right now, looks like most of the job-havers took advantage of their connections
+   </div>
+</div>
+</section>
+ 
+<section class="survey-section">
+<h1>Where are you working?</h1>
+<div class="section-content">
+   <img
+    class="word-cloud"
+    src="charts/jobLocation.png"
+    alt="Word cloud of future job locations">
+   <div class="description">
+      Like I said earlier, Tesla loves hiring Tron Students.
+   </div>
+</div>
+</section>
+ 
+<section class="survey-section">
+<h1>What role will you be working in?</h1>
+<div class="section-content">
+   <div
+      class="chart-container barh-chart-container"
+      data-chart="jobRole">
+   </div>
+   <div class="description">
+      Software seems to be the most popular field to have gone into, followed by the more hardware-oriented fields.
+   </div>
+</div>
+</section>
+ 
+<section class="survey-section">
+<h1>Why did you pick this job?</h1>
+<div class="section-content">
+   <div
+      class="chart-container barh-chart-container"
+      data-chart="jobReason">
+   </div>
+   <div class="description">
+      It would appear that people like having money, as well as the potential to get more money. Location plays a big part as well.
+   </div>
+</div>
+</section>
+ 
+<section class="survey-section">
+<h1>What is your Total Compensation (TC) for your first post-grad year? <br>(Base Salary + Expected Stock/Equity + Bonus in CAD)</h1>
+<div class="section-content">
+   <div
+      class="chart-container"
+      data-chart="salary">
+   </div>
+   <div class="description">
+      Is that guy really making 900k in his first year? That's suspicious. Oh well, I have to include it, even though it messes with my graph.<br><br>Sorry to those of you who hate violin graphs, I just thought it looked neat. Look at all the metrics when you hover over it!
+   </div>
+</div>
+</section>
+ 
+<section class="survey-section">
+<h1>Did you get a signing bonus? If so, How much?</h1>
+<div class="section-content">
+   <div
+      class="chart-container"
+      data-chart="signing">
+   </div>
+   <div class="description">
+      Most people did not get a signing bonus.<br><br> I'm seeing the issue with the violin charts here, feels like a flaw that it extends into negative money.
+   </div>
+</div>
+</section>
+ 
+<section class="survey-section">
+<h1>Primary City/Region you are moving to post-graduation</h1>
+<div class="section-content">
+   <div
+      class="chart-container bar-chart-container"
+      data-chart="whereJob">
+   </div>
+   <div class="description">
+      The brain drain is alive and well, but many are staying in Canada
+   </div>
+</div>
+</section>
+ 
+<section class="survey-section">
+<h1>If working outside of Canada, what's making you leave?</h1>
+<div class="section-content">
+   <div
+      class="chart-container bar-chart-container"
+      data-chart="whyLeave">
+   </div>
+   <div class="description">
+      People are leaving so that they can make more money and do more interesting jobs, amongst other reasons
+   </div>
+</div>
+</section>
+ 
+<section class="survey-section">
+<h1>Do you intend to return to Canada?</h1>
+<div class="section-content">
+   <div
+      class="chart-container"
+      data-chart="willYouReturn">
+   </div>
+   <div class="description">
+      A little over half of the leavers intend to un-leave.
+   </div>
+</div>
+</section>
+ 
+<section class="survey-section">
+<h1>Do you intend to pursue higher education in the next ten years?</h1>
+<div class="section-content">
+   <div
+      class="chart-container"
+      data-chart="willYouLearn">
+   </div>
+   <div class="description">
+      The vast majority of us are unsure or not planning on it.
+   </div>
+</div>
+</section>
+ 
+<section class="survey-section">
+<h1>Grad School - Lined Up?</h1>
+<div class="section-content">
+   <div
+      class="chart-container"
+      data-chart="gradSchoolLined">
+   </div>
+   <div class="description">
+      This was a dumb question. I should have specified people should only answer if they want to go to Grad School.
+   </div>
+</div>
+</section>
+ 
+<section class="survey-section">
+<h1>Grad School - What School?</h1>
+<div class="section-content">
+   <div
+      class="chart-container"
+      data-chart="whereGrad">
+   </div>
+   <div class="description">
+      Most people are returning to Waterloo. Some people call it the MIT of the North, you know.
+   </div>
+</div>
+</section>
+ 
+<section class="survey-section">
+<h1>Grad School - What Program?</h1>
+<div class="section-content">
+   <div
+      class="chart-container"
+      data-chart="whatGrad">
+   </div>
+   <div class="description">
+      What a fun little graph! Nice colors!
+   </div>
+</div>
+</section>
+
+<section class="survey-section">
+<h1>Grad School - Why?</h1>
+<div class="section-content">
+   <div
+    class="raw-responses"
+    data-responses="whyGrad">
+</div>
+   <div class="description">
+      All great reasons.
+   </div>
+</div>
+</section>
+ 
+<section class="survey-section">
+<h1>Are you planning to go on a Grad Trip?</h1>
+<div class="section-content">
+   <div
+      class="chart-container"
+      data-chart="gradTrip">
+   </div>
+   <div class="description">
+      Most people plan to take advantage of the life gap graduation has presented.
+   </div>
+</div>
+</section>
+ 
+<section class="survey-section">
+<h1>Grad Trip - Where are you going/have gone?</h1>
+<div class="section-content">
+   <div
+      class="chart-container"
+      data-chart="gradTripWhere">
+   </div>
+   <div class="description">
+      So I didn't give enough categories here, and gave a write-in option, so now I have a big mixed up graph with a good few overlapping categories.<br><br> To the guy who wrote in "Sri Lanka mfer", you could have just clicked South Asia. It was a pre written option. I forgot a bunch of regions but that was not one of them. No need to be rude.
+   </div>
+</div>
+</section>
+ 
+<section class="survey-section">
+<h1>Grad Trip - How Long (In Days)</h1>
+<div class="section-content">
+   <div
+      class="chart-container"
+      data-chart="gradTripLen">
+   </div>
+   <div class="description">
+      Most people plan for their trip to take a bit over a month. You earned it!
+   </div>
+</div>
+</section>
+ 
+<section class="survey-section">
+<h1>When you think you'll get married?</h1>
+<div class="section-content">
+   <div
+      class="chart-container bar-chart-container"
+      data-chart="married">
+   </div>
+   <div class="description">
+      Most people want to get married between 25-30. I don't need to tell you that though, look at the graph, it's pretty obvious.
+   </div>
+</div>
+</section>
+ 
+<section class="survey-section">
+<h1>When you think you'll have children?</h1>
+<div class="section-content">
+   <div
+      class="chart-container bar-chart-container"
+      data-chart="children">
+   </div>
+   <div class="description">
+      Most of the respondents plan to have children in their late 20s/ early 30s. <br>Two respondents need to hop to it pretty soon.
+   </div>
+</div>
+</section>
+
+ <div class="page-navigation">
+
+    <a href="relationships.html" class="previous-button">
+        ← I just need to check out that Cats and Dogs graph again. Groundbreaking stuff
+    </a>
+
+    <a href="conclusion.html" class="next-button">
+        Alright, lets wrap this up with a bunch of write-in submissions→
+    </a>
+
+</div>
+ 
+
+
+    </main>
+
+<!-- =========================
+     CHART LOADER
+     ========================= -->
+
+<script src="js/charts.js"></script>
+
+</body>
+</html>

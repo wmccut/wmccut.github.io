@@ -5,170 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Tron 2026 Class Profile</title>
+    <link rel="stylesheet" href="css/style.css">
 
     <!-- Plotly for charts -->
     <script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
 
-    <style>
-        /* =========================
-           GENERAL
-           ========================= */
-
-        * {
-            box-sizing: border-box;
-        }
-
-        body {
-            margin: 0;
-            background: white;
-            color: #222;
-            font-family: Georgia, "Times New Roman", serif;
-        }
-
-
-        /* =========================
-           NAVIGATION
-           ========================= */
-
-        .navbar {
-            width: 100%;
-            padding: 18px 18px 15px;
-
-            display: flex;
-            align-items: center;
-            gap: 24px;
-
-            white-space: nowrap;
-        }
-
-        .site-title {
-            font-size: 18px;
-            color: #111;
-        }
-
-        .nav-links {
-            display: flex;
-            gap: 18px;
-            flex-wrap: wrap;
-        }
-
-        .nav-links a {
-            color: #555;
-            text-decoration: none;
-            font-family: Arial, sans-serif;
-            font-size: 14px;
-        }
-
-        .nav-links a:hover {
-            color: #111;
-        }
-
-
-        /* =========================
-           MAIN CONTENT
-           ========================= */
-
-        main {
-            width: min(1135px, calc(100% - 40px));
-            margin: 70px auto 0;
-        }
-
-
-        /* =========================
-           SECTIONS
-           ========================= */
-
-        .survey-section {
-            border-bottom: 2px solid #aaa;
-            padding-bottom: 8px;
-            margin-bottom: 0;
-        }
-
-        .survey-section h1 {
-            margin: 0 0 28px 18px;
-
-            font-size: 30px;
-            font-weight: normal;
-            line-height: 1.2;
-        }
-
-        .section-content {
-            display: grid;
-            grid-template-columns: 2fr 1fr;
-            gap: 78px;
-
-            align-items: stretch;
-        }
-
-
-        /* =========================
-           CHARTS
-           ========================= */
-
-        .chart-container {
-            min-width: 0;
-            height: 390px;
-        }
-
-        .bar-chart-container {
-            height: 430px;
-        }
-
-
-        /* =========================
-           EXPLANATION BOX
-           ========================= */
-
-        .description {
-            background: #ccc;
-
-            border-radius: 8px;
-
-            min-height: 390px;
-            padding: 24px 14px;
-
-            color: #3f3f3f;
-
-            font-family: Arial, sans-serif;
-            font-size: 17px;
-            line-height: 1.55;
-        }
-
-
-        /* =========================
-           RESPONSIVE
-           ========================= */
-
-        @media (max-width: 850px) {
-
-            .navbar {
-                align-items: flex-start;
-                flex-direction: column;
-            }
-
-            .nav-links {
-                gap: 10px 16px;
-            }
-
-            main {
-                width: calc(100% - 30px);
-                margin-top: 40px;
-            }
-
-            .section-content {
-                grid-template-columns: 1fr;
-                gap: 25px;
-            }
-
-            .description {
-                min-height: auto;
-            }
-
-            .survey-section h1 {
-                margin-left: 0;
-            }
-        }
-    </style>
+   
 </head>
 
 
@@ -180,250 +22,400 @@
 
     <header class="navbar">
 
-        <div class="site-title">
-            Tron 2022 Class Profile
-        </div>
+    <a class="site-title" href="index.html">
+        Tron 2026 Class Profile
+    </a>
 
-        <nav class="nav-links">
-            <a href="#">Demographics</a>
-            <a href="#">School</a>
-            <a href="#">Co-op</a>
-            <a href="#">Mental Health</a>
-            <a href="#">Lifestyle</a>
-            <a href="#">Sex, Drugs &amp; Relationships</a>
-            <a href="#">Future Plans &amp; Advice</a>
-            <a href="#">Conclusion</a>
-        </nav>
+    <nav class="nav-links">
 
-    </header>
+        <a href="demographics.html">Demographics 📊</a>
+        <a href="school.html">School</a>
+        <a href="coop.html">Co-op</a>
+        <!-- <a href="mental-health.html">Mental Health</a> -->
+        <!-- <a href="lifestyle.html">Lifestyle</a> -->
+        <a href="relationships.html">Lifestyle &amp; Relationships</a>
+        <a href="future-plans.html">Future Plans</a>
+        <a href="conclusion.html">Conclusions &amp; Advice</a>
+
+    </nav>
+
+</header>
+
 
 
     <main>
 
-        <!-- =========================
-             RESPONSE RATE
-             ========================= -->
+    <!-- =========================
+         RESPONSE RATE
+         ========================= -->
 
-        <section class="survey-section">
+    
 
-            <h1>Response Rate</h1>
+    <section class="survey-section">
+   <h1>Response Rate</h1>
+   <div class="section-content">
+      <div
+         class="chart-container"
+         data-chart="responseRate">
+   </div>
+   <div class="description">
+         We had a pretty solid response rate! Thank you to everyone who responded, and everyone who bugged their friends until they responded too.<br><br>
+         I'm not actually super sure how many people we have in our cohort so I just counted the people in the class picture.
+   </div>
+</div>
+</section>
+<section class="survey-section">
+<h1>Respondent Stream Breakdown</h1>
+<div class="section-content">
+   <div
+      class="chart-container"
+      data-chart="stream">
+   </div>
+   <div class="description">
+      Stream 8 beat Stream 4 with twice the responses! Stream 8 was pretty active on the class discord server where this was sent out, so not too big of a surprise here.
+   </div>
+</div>
+</section>
+ 
+<section class="survey-section">
+<h1>Birth Year</h1>
+<div class="section-content">
+   <div
+      class="chart-container"
+      data-chart="birthYear">
+   </div>
+   <div class="description">
+      Most of us were born in 2003.<br><br>According to Google, that was the year Madonna and Britney Spears shared an iconic kiss on stage at the MTV Video Music Awards.
 
-            <div class="section-content">
+   </div>
+</div>
+</section>
+ 
+<section class="survey-section">
+<h1>Gender Breakdown</h1>
+<div class="section-content">
+   <div
+      class="chart-container"
+      data-chart="gender">
+   </div>
+   <div class="description">
+      74.5% of the class identifies as male, down from 82.5% in the last Tron survey from 2022.
+   </div>
+</div>
+</section>
+ 
+<section class="survey-section">
+<h1>Pronouns</h1>
+<div class="section-content">
+   <div
+      class="chart-container"
+      data-chart="pronouns">
+   </div>
+   <div class="description">
+      Pretty similar ratio here as the one above.
+   </div>
+</div>
+</section>
+ 
+<section class="survey-section">
+<h1>Class Ethnicity Breakdown (Multi-Select)</h1>
+<div class="section-content">
+   <div
+      class="chart-container"
+      data-chart="ethnicity">
+   </div>
+   <div class="description">
+      You ever make a google form with 193 questions and mess up on like the sixth one? I did that here. This would be way more interesting if I put in more subcategories, but instead I guess I wrote Asian and called it a day. A few people specified South Asian by writing in their own answers, but that's not super useful when everyone else already clicked the umbrella term for 60% of the planet.<br> Remind me to proofread my work next time.
+   </div>
+</div>
+</section>
+ 
+<section class="survey-section">
+<h1>Immigration Status</h1>
+<div class="section-content">
+   <div
+      class="chart-container"
+      data-chart="immigrationStatus1">
+   </div>
+   <div class="description">
+      Responses were defined as follows:<br><br>
+      - First Generation Immigrant (Born outside of Canada)<br>
+      - Second Generation Immigrant(Born in Canada with at least one parent born outside Canada)<br>
+      - Third Generation or more (Anything Else)
+   </div>
+</div>
+</section>
+ 
+<section class="survey-section">
+<h1>Religious Beliefs</h1>
+<div class="section-content">
+   <div
+      class="chart-container bar-chart-container"
+      data-chart="religion1">
+   </div>
+   <div class="description">
+      Similarly to past surveys, Agnosticism and Atheism took the majority of the votes, though they've swapped positions since the 2022 Profile.
+      <br>
+      <br>
+      <br>*Note: The accented characters in Bahá’í did not agree with the chart export tool so some characters have been replaced.
+   </div>
+</div>
+</section>
+ 
+<section class="survey-section">
+<h1>Sexuality</h1>
+<div class="section-content">
+   <div
+      class="chart-container"
+      data-chart="sexuality">
+   </div>
+   <div class="description">
+      We're 1% less straight than the 2022 Survey. If we extrapolate this trend, the class of 2374 will be entirely LGBTQ!
+   </div>
+</div>
+</section>
+ 
+<section class="survey-section">
+<h1>Why Tron? (Multi-Select)</h1>
+<div class="section-content">
+   <div
+      class="chart-container bar-chart-container"
+      data-chart="whyTron">
+   </div>
+   <div class="description">
+      Seems like most people opted to take tron to explore a wide range of topics. The funny name and Co-op are a big boost, too.
+   </div>
+</div>
+</section>
+ 
+<section class="survey-section">
+<h1>High School Location</h1>
+<div class="section-content">
+   <div
+      class="chart-container bar-chart-container"
+      data-chart="highschool">
+   </div>
+   <div class="description">
+      Unsurprisingly, most of the class went to school in Ontario.
+   </div>
+</div>
+</section>
+ 
+<section class="survey-section">
+<h1>Were you in an enriched program in High School?</h1>
+<div class="section-content">
+   <div
+      class="chart-container bar-chart-container"
+      data-chart="enriched">
+   </div>
+   <div class="description">
+      A lot of us took enriched programs, but they clearly weren't required to get in.
+   </div>
+</div>
+</section>
+ 
+<section class="survey-section">
+<h1>High School Average</h1>
+<div class="section-content">
+   <div
+      class="chart-container"
+      data-chart="HSAve">
+   </div>
+   <div class="description">
+      The University uses high school averages as an entry criterion, so we had a fairly strong average^2.<br> Our mean was astronomically higher than 2022's measly 94.6%. We're so cool
+   </div>
+</div>
+</section>
+ 
+<section class="survey-section">
+<h1>High School Average vs University Average</h1>
+<div class="section-content">
+   <div
+      class="chart-container"
+      data-chart="HSvUniAvg">
+   </div>
+   <div class="description">
+      There's a slight correlation between High School average and University, but it's not too crazy.
+   </div>
+</div>
+</section>
+ 
+<section class="survey-section">
+<h1>High School Extra Curriculars</h1>
+<div class="section-content">
+   <div
+      class="chart-container bar-chart-container"
+      data-chart="HSExtra">
+   </div>
+   <div class="description">
+      The most popular Extra Curricular was "Sports". Specific! A lot of us also got involved with various robotics programs, and student government.
+   </div>
+</div>
+</section>
+ 
+<section class="survey-section">
+<h1>Political Leaning: Rate your general political alignment</h1>
+<div class="section-content">
+   <div
+      class="chart-container bar-chart-container"
+      data-chart="poliLean">
+   </div>
+   <div class="description">
+      It seems like the class tends to lean slightly to the left in this very simplified spectrum, but few go all the way.
+   </div>
+</div>
+</section>
+ 
+<section class="survey-section">
+<h1>Authoritarianism vs Libertarianism</h1>
+<div class="section-content">
+   <div
+      class="chart-container bar-chart-container"
+      data-chart="authVlib">
+   </div>
+   <div class="description">
+      Almost a nice little bell curve here, but people seem to be a bit more prone to slight Libertarianism.
+   </div>
+</div>
+</section>
+ 
+<section class="survey-section">
+<h1>Which party would you vote for?</h1>
+<div class="section-content">
+   <div
+      class="chart-container bar-chart-container"
+      data-chart="poliParty">
+   </div>
+   <div class="description">
+      The majority of the class chose the Liberal party, with the Conservative and NDP parties receiving similar levels of support.
+   </div>
+</div>
+</section>
+ 
+<section class="survey-section">
+<h1>Student Status</h1>
+<div class="section-content">
+   <div
+      class="chart-container"
+      data-chart="studentStatus">
+   </div>
+   <div class="description">
+      Yeah, this is to be expected based on the High School locations earlier.
+   </div>
+</div>
+</section>
+ 
+<section class="survey-section">
+<h1>Highest Education Level of Either Parent</h1>
+<div class="section-content">
+   <div
+      class="chart-container bar-chart-container"
+      data-chart="parentEducation">
+   </div>
+   <div class="description">
+      Most of our parents got their Bachelor's, and a good chunk got a Graduate Degree as well!
+   </div>
+</div>
+</section>
+ 
+<section class="survey-section">
+<h1>Combined Gross Family Income during your high school years</h1>
+<div class="section-content">
+   <div
+      class="chart-container bar-chart-container"
+      data-chart="familyIncome">
+   </div>
+   <div class="description">
+      This one forms a neat little bell curve, peaking at the 150k-199k option. The average Household income was $106,300 CAD in 2021, our first year. Ontario's was a bit higher at $116k before taxes, but our families still sit above the average. 
+   </div>
+</div>
+</section>
+ 
+<section class="survey-section">
+<h1>Parental financial contribution during degree</h1>
+<div class="section-content">
+   <div
+      class="chart-container bar-chart-container"
+      data-chart="familyContribution">
+   </div>
+   <div class="description">
+      Both extremes got the exact same number of responses! That's kind of interesting.
+   </div>
+</div>
+</section>
+ 
+<section class="survey-section">
+<h1>Parental Status</h1>
+<div class="section-content">
+   <div
+      class="chart-container"
+      data-chart="parentalStatus">
+   </div>
+   <div class="description">
+      Most of our parents are married.
+   </div>
+</div>
+</section>
+ 
+<section class="survey-section">
+<h1>Did one of your parents work in STEM?</h1>
+<div class="section-content">
+   <div
+      class="chart-container"
+      data-chart="parentStem">
+   </div>
+   <div class="description">
+      STEM parents took a very slim majority.
+   </div>
+</div>
+</section>
+ 
+<section class="survey-section">
+<h1>Debt Post Grad</h1>
+<div class="section-content">
+   <div
+      class="chart-container bar-chart-container"
+      data-chart="debtPostGrad">
+   </div>
+   <div class="description">
+      Most of us are graduating debt free! The Co-op program certainly helped with that one.
+   </div>
+</div>
+</section>
+ 
+<section class="survey-section">
+<h1>Savings Post Grad</h1>
+<div class="section-content">
+   <div
+      class="chart-container bar-chart-container"
+      data-chart="savingsPostGrad">
+   </div>
+   <div class="description">
+      I should have made this one with more buckets in the upper end. Oh well, Live and learn.
+   </div>
+</div>
+</section>
+ 
 
-                <div
-                    id="response-chart"
-                    class="chart-container">
-                </div>
+    
+<div class="page-navigation">
 
-                <div class="description">
-                    52% of the graduating class responded
-                    to the main survey. Thank you all!
-                </div>
+    <a href="index.html" class="previous-button">
+        ← I think I'm lost, take me home please
+    </a>
 
-            </div>
+    <a href="school.html" class="next-button">
+        Yay! School! I did that too!→
+    </a>
 
-        </section>
-
-
-        <!-- =========================
-             BIRTH YEAR
-             ========================= -->
-
-        <section class="survey-section">
-
-            <h1>Birth Year</h1>
-
-            <div class="section-content">
-
-                <div
-                    id="birth-year-chart"
-                    class="chart-container bar-chart-container">
-                </div>
-
-                <div class="description">
-                    Most of us were born right before Y2K in
-                    the last year of the 20th century!
-                </div>
-
-            </div>
-
-        </section>
-
+</div>
     </main>
 
+<!-- =========================
+     CHART LOADER
+     ========================= -->
 
-    <script>
-
-        /* =========================================
-           RESPONSE RATE PIE CHART
-           ========================================= */
-
-        const responseData = [
-            {
-                values: [51.9, 48.1],
-
-                labels: [
-                    "Responded",
-                    "Did Not Respond"
-                ],
-
-                type: "pie",
-
-                marker: {
-                    colors: [
-                        "#5b0792",
-                        "#398aaa"
-                    ]
-                },
-
-                textinfo: "percent",
-
-                textfont: {
-                    color: "white",
-                    size: 12
-                },
-
-                hoverinfo: "label+percent",
-
-                sort: false,
-
-                direction: "clockwise",
-
-                rotation: 90
-            }
-        ];
-
-
-        const responseLayout = {
-
-            showlegend: true,
-
-            legend: {
-                x: 0.82,
-                y: 0.92,
-
-                font: {
-                    family: "Georgia, Times New Roman, serif",
-                    size: 12,
-                    color: "#111"
-                }
-            },
-
-            margin: {
-                l: 40,
-                r: 20,
-                t: 0,
-                b: 10
-            },
-
-            paper_bgcolor: "rgba(0,0,0,0)",
-
-            plot_bgcolor: "rgba(0,0,0,0)"
-        };
-
-
-        Plotly.newPlot(
-            "response-chart",
-            responseData,
-            responseLayout,
-            {
-                responsive: true,
-                displayModeBar: false
-            }
-        );
-
-
-        /* =========================================
-           BIRTH YEAR BAR CHART
-           
-           Replace these numbers with the actual
-           survey data later.
-           ========================================= */
-
-        const birthYearData = [
-            {
-                x: [
-                    "1997",
-                    "1998",
-                    "1999",
-                    "2000",
-                    "2001",
-                    "2002",
-                    "2003"
-                ],
-
-                y: [
-                    1,
-                    3,
-                    15,
-                    84,
-                    18,
-                    3,
-                    1
-                ],
-
-                type: "bar",
-
-                marker: {
-                    color: "#5b0792"
-                }
-            }
-        ];
-
-
-        const birthYearLayout = {
-
-            margin: {
-                l: 65,
-                r: 10,
-                t: 10,
-                b: 65
-            },
-
-            paper_bgcolor: "rgba(0,0,0,0)",
-
-            plot_bgcolor: "#eeeeee",
-
-            font: {
-                family: "Arial, sans-serif",
-                size: 12
-            },
-
-            xaxis: {
-                title: "",
-
-                gridcolor: "white",
-
-                zeroline: false
-            },
-
-            yaxis: {
-                title: "Responses",
-
-                gridcolor: "white",
-
-                zeroline: false,
-
-                rangemode: "tozero"
-            },
-
-            bargap: 0.08,
-
-            showlegend: false
-        };
-
-
-        Plotly.newPlot(
-            "birth-year-chart",
-            birthYearData,
-            birthYearLayout,
-            {
-                responsive: true,
-                displayModeBar: false
-            }
-        );
-
-    </script>
+<script src="js/charts.js"></script>
 
 </body>
 </html>

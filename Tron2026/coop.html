@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tron 2026 Class Profile</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Plotly for charts -->
+    <script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
+
+   
+</head>
+
+
+<body>
+
+    <!-- =========================
+         NAVIGATION
+         ========================= -->
+
+    <header class="navbar">
+
+    <a class="site-title" href="index.html">
+        Tron 2026 Class Profile
+    </a>
+
+    <nav class="nav-links">
+
+        <a href="demographics.html">Demographics</a>
+        <a href="school.html">School</a>
+        <a href="coop.html">Co-op 🤑</a>
+        <!-- <a href="mental-health.html">Mental Health</a> -->
+        <!-- <a href="lifestyle.html">Lifestyle</a> -->
+        <a href="relationships.html">Lifestyle &amp; Relationships</a>
+        <a href="future-plans.html">Future Plans</a>
+        <a href="conclusion.html">Conclusions &amp; Advice</a>
+
+    </nav>
+
+</header>
+
+
+
+    <main>
+
+    <!-- =========================
+         PASTE ALL CHART BLOCKS HERE
+         ========================= -->
+
+<section class="survey-section">
+<h1>Overall University Average vs Average Co-op Wage</h1>
+<div class="section-content">
+   <div
+      class="chart-container"
+      data-chart="avgWageVsAve">
+   </div>
+   <div class="description">
+      Oooweee. Just look at that trendline. Flat as anything. And that R^2? Not much better. 0.000166. My good friend google.com told me this is a good way to prove two variables are not correlated.
+   </div>
+</div>
+</section>
+ 
+<section class="survey-section">
+<h1>Co-Op: Hourly Wage</h1>
+<div class="section-content">
+   <div
+      class="chart-container"
+      data-chart="coopWage">
+   </div>
+   <div class="description">
+      People like to pay you more when you know how to do things.<br>It's an in-demand ability, knowing how to do things.
+   </div>
+</div>
+</section>
+ 
+<section class="survey-section">
+<h1>Co-Op: Hourly Wage by Gender</h1>
+<div class="section-content">
+   <div
+      class="chart-container"
+      data-chart="gendervWage">
+   </div>
+   <div class="description">
+      The gendered wage gap is clearly visible in our coop pay. This is a more prominent discrepancy than what was observed in the 2022 class profile.
+   </div>
+</div>
+</section>
+ 
+<section class="survey-section">
+<h1>Primary Job Function during your Final Co-op Term</h1>
+<div class="section-content">
+   <div
+      class="chart-container bar-chart-container"
+      data-chart="jobFunction">
+   </div>
+   <div class="description">
+      Most people chose to either specialize into Hardware or Software roles. <br>Not super surprising, those are pretty big umbrellas now that I think about it. These two fields are fairly evenly split, with only a single point discrepancy between them.
+   </div>
+</div>
+</section>
+ 
+<section class="survey-section">
+<h1>Final Co-op Job Function vs. Hourly Wage</h1>
+<div class="section-content">
+   <div
+      class="chart-container"
+      data-chart="jobFunctionWage">
+   </div>
+   <div class="description">
+      Software Engineering roles had the highest median pay, if you don't count whatever the hell is going on with Project Management over there.
+   </div>
+</div>
+</section>
+ 
+<section class="survey-section">
+<h1>Co-op Term Locations</h1>
+<div class="section-content">
+   <div
+      class="chart-container"
+      data-chart="coopLocation">
+   </div>
+   <div class="description">
+      After the third Coop term, roles in the GTA actually stay pretty steady while other categories shrank to give way to more Bay Area jobs. <br>They doubled between the last 2 terms? Kinda crazy.
+   </div>
+</div>
+</section>
+ 
+<section class="survey-section">
+<h1>Co-op Location vs. Hourly Wage</h1>
+<div class="section-content">
+   <div
+      class="chart-container"
+      data-chart="coopLocationWage">
+   </div>
+   <div class="description">
+      Ok, I think I'm getting why people want to make California money now.
+   </div>
+</div>
+</section>
+ 
+<section class="survey-section">
+<h1>Have you ever had a 'hell' co-op term (a severely bad/toxic experience)?</h1>
+<div class="section-content">
+   <div
+      class="chart-container"
+      data-chart="hellCoop">
+   </div>
+   <div class="description">
+      Well that sucks. You should avoid doing that again.
+   </div>
+</div>
+</section>
+ 
+<section class="survey-section">
+<h1>What was your favorite company to work at?</h1>
+<div class="section-content">
+   <img
+    class="word-cloud"
+    src="charts/favCompany.png"
+    alt="Word cloud of favorite coop locations"
+>
+   <div class="description">
+      Tesla won by quite a bit, with 9 votes towering over Formlabs and Verkata's 3 apiece. Tesla loves hiring Tron students, so it's no surprise they got a lot of backing.
+   </div>
+</div>
+</section>
+ 
+<section class="survey-section">
+<h1>What was your LEAST favorite company to work at?</h1>
+<div class="section-content">
+   <img
+    class="word-cloud"
+    src="charts/leastFavCompany.png"
+    alt="Word cloud of least favorite coop locations">
+   <div class="description">
+      Martinrea won with three (count em') THREE entire votes! Tesla tied for second, along with Toyota, Ford, Virtek and Untether. Each of these lovely runner-ups received 2 votes!
+   </div>
+</div>
+</section>
+
+ <div class="page-navigation">
+
+    <a href="school.html" class="previous-button">
+        ← PLEASE let me see school stats again! Just one more time!
+    </a>
+
+    <a href="relationships.html" class="next-button">
+        Hmm, interesting data. On to Lifestyle & Relationships →
+    </a>
+
+</div>
+ 
+
+    </main>
+
+<!-- =========================
+     CHART LOADER
+     ========================= -->
+
+<script src="js/charts.js?v=2"></script>
+
+</body>
+</html>

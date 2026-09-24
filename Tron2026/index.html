@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Tron 2022 Class Profile</title>
+    <title>Tron 2026 Class Profile</title>
 
     <style>
         * {
@@ -38,9 +38,14 @@
         .site-title {
             font-size: 18px;
             color: #111;
-
+            text-decoration: none;
             white-space: nowrap;
         }
+
+        .site-title:hover {
+            color: #111;
+        }
+
 
         .nav-links {
             display: flex;
@@ -203,6 +208,44 @@
 
             color: #666;
         }
+        .page-navigation {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            margin-top: 35px;
+            padding: 20px 0 50px;
+        }
+
+        .previous-button,
+        .next-button {
+            padding: 12px 20px;
+            border-radius: 6px;
+
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            text-decoration: none;
+        }
+
+        .previous-button {
+            color: #555;
+            border: 1px solid #ccc;
+            background: white;
+        }
+
+        .next-button {
+            color: white;
+            background: #222;
+        }
+
+        .previous-button:hover {
+            background: #f3f3f3;
+        }
+
+        .next-button:hover {
+            background: #555;
+        }
+
 
 
         /* =========================
@@ -245,51 +288,25 @@
 
     <header class="navbar">
 
-        <div class="site-title">
-            Tron 2022 Class Profile
-        </div>
+    <a class="site-title" href="index.html">
+        Tron 2026 Class Profile
+    </a>
 
-        <nav class="nav-links">
+    <nav class="nav-links">
 
-            <a href="index.html">
-                Home
-            </a>
+        <a href="demographics.html">Demographics</a>
+        <a href="school.html">School</a>
+        <a href="coop.html">Co-op</a>
+        <!-- <a href="mental-health.html">Mental Health</a> -->
+        <!-- <a href="lifestyle.html">Lifestyle</a> -->
+        <a href="relationships.html">Lifestyle &amp; Relationships</a>
+        <a href="future-plans.html">Future Plans</a>
+        <a href="conclusion.html">Conclusion &amp; Advice</a>
 
-            <a href="demographics.html">
-                Demographics
-            </a>
+    </nav>
 
-            <a href="school.html">
-                School
-            </a>
+</header>
 
-            <a href="coop.html">
-                Co-op
-            </a>
-
-            <a href="mental-health.html">
-                Mental Health
-            </a>
-
-            <a href="lifestyle.html">
-                Lifestyle
-            </a>
-
-            <a href="relationships.html">
-                Sex, Drugs &amp; Relationships
-            </a>
-
-            <a href="future-plans.html">
-                Future Plans &amp; Advice
-            </a>
-
-            <a href="conclusion.html">
-                Conclusion
-            </a>
-
-        </nav>
-
-    </header>
 
 
     <!-- =========================
@@ -302,12 +319,12 @@
 
             <div class="intro-text">
 
-                Welcome to the Tron 2022 Class Profile!
+                Welcome to the Tron 2026 Class Profile!
 
                 The Mechatronics Engineering program at the
                 University of Waterloo is a program aiming to give
                 a wide base of knowledge in mechanical engineering,
-                electrical engineering, programming and real-time control.
+                electrical engineering, programming and real-time control. 
 
             </div>
 
@@ -319,12 +336,12 @@
             <section class="welcome">
 
                 <h1>
-                    Tron 2022 Class Profile
+                    Tron 2026 Class Profile
                 </h1>
 
                 <p>
                     This website presents information about the
-                    Tron 2022 graduating class, based on data
+                    Tron 2026 graduating class, based on data
                     collected through a class survey.
                 </p>
 
@@ -345,7 +362,36 @@
                     The program has eight academic terms and six
                     co-op terms. This profile presents data taken
                     from a survey administered to the class between
-                    April and June 2022.
+                    June and August of 2026.<br> 
+                </p>
+            </section>
+            <section class="content-section">
+
+                <h2>
+                    Acknowledgements
+                </h2>
+
+                <p>
+                    This profile was heavily inspired by previous profiles, especially the Tron 2022 Class Profile. I even took this part from it. 
+                    I would like to thank Jared for getting a good head start on the google form, and being generous enough to let me use it to build off of.<br> I'd also like to thank Caleb, Zara, and Phoebe for helping me get the word out about the initial google form, as well as the group of people that kept pinging me on discord asking when I'd be releasing it. Now. I'm releasing it now.
+
+                <br><br>To the class: Thanks for spending 5 Years with me. It gets rocky sometimes, but we got through, and now we can all do IOP from memory. <br>To everyone else: Enjoy looking through our class profile! Hopefully it can offer you some insight into our lives, and the program as a whole.
+                </p>
+            </section>
+            <section class="content-section">
+
+                <h2>
+                    Things to Note
+                </h2>
+
+                <p>
+                    I'm not really much of a web developer, nor do I regularly make surveys like this, so this took a
+                    STUPID amount of time for me to figure out. If you are a student and you want to do something like this, 
+                    hit me up at wt2mccut@uwaterloo.ca and I'll give you the necessary google form and disgusting python file
+                     I put together for this.
+                     Despite what everyone I spoke to suggested, this was not a claude one-shot. I put all 120-something graphs together by hand. 
+                     Was that a good use of my time? Maybe not, but I'm reasonably proud of the results.<br><br>
+                     Also, this profile was created independently of the University of Waterloo or the Mechanical & Mechatronics Departement. The content in this profile does not represent the University in any way.
                 </p>
 
             </section>
@@ -399,7 +445,7 @@
                 </a>
 
 
-                <a class="quick-link" href="mental-health.html">
+                <!-- <a class="quick-link" href="mental-health.html">
 
                     <h3>
                         Mental Health
@@ -410,13 +456,13 @@
                         health and student experiences.
                     </p>
 
-                </a>
+                </a> -->
 
 
-                <a class="quick-link" href="lifestyle.html">
+                <a class="quick-link" href="relationships.html">
 
                     <h3>
-                        Lifestyle
+                        Lifestyle & Relationships
                     </h3>
 
                     <p>
@@ -440,9 +486,34 @@
 
                 </a>
 
+                <a class="quick-link" href="conclusion.html">
+
+                    <h3>
+                        Conclusions & Advice
+                    </h3>
+
+                    <p>
+                        We're so wise now. Come read how wise we are now.
+                    </p>
+
+                </a>
+
             </section>
 
         </div>
+        <div class="page-navigation">
+
+    <a href="index.html" class="previous-button">
+        ← Again! Again!
+    </a>
+
+    <a href="demographics.html" class="next-button">
+        I cannot WAIT to see what year you guys were born!→
+    </a>
+
+</div>
+
+
 
     </main>
 

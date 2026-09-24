@@ -1,0 +1,236 @@
+        /* =========================
+           GENERAL
+           ========================= */
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background: white;
+            color: #222;
+            font-family: Georgia, "Times New Roman", serif;
+        }
+
+
+        /* =========================
+           NAVIGATION
+           ========================= */
+
+        .navbar {
+            display: flex;
+            align-items: center;
+
+            width: 100%;
+            padding: 16px 18px;
+
+            border-bottom: 1px solid #f1f1f1;
+
+            gap: 25px;
+        }
+
+        .site-title {
+            font-size: 18px;
+            color: #111;
+            text-decoration: none;
+            white-space: nowrap;
+        }
+
+        .site-title:hover {
+            color: #111;
+        }
+        .nav-links {
+            display: flex;
+            gap: 18px;
+            flex-wrap: wrap;
+        }
+
+        .nav-links a {
+            color: #555;
+            text-decoration: none;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+        }
+
+        .nav-links a:hover {
+            color: #111;
+        }
+
+
+        /* =========================
+           MAIN CONTENT
+           ========================= */
+
+        main {
+            width: min(1135px, calc(100% - 40px));
+            margin: 70px auto 0;
+        }
+
+
+        /* =========================
+           SECTIONS
+           ========================= */
+
+        .survey-section {
+            border-bottom: 2px solid #aaa;
+            padding-bottom: 8px;
+            margin-bottom: 0;
+        }
+
+        .survey-section h1 {
+            margin: 0 0 28px 18px;
+
+            font-size: 30px;
+            font-weight: normal;
+            line-height: 1.2;
+        }
+
+        .section-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 78px;
+
+            align-items: stretch;
+        }
+
+
+        /* =========================
+           CHARTS
+           ========================= */
+
+        .chart-container {
+            min-width: 0;
+            height: 390px;
+        }
+
+        .bar-chart-container {
+            height: 430px;
+        }
+        .barh-chart-container{
+            height: 750px;
+        }
+        .chart-error { 
+            color: #777;
+            font-family: Arial, sans-serif;
+            font-size: 14px; 
+            text-align: center;
+            padding-top: 150px; }
+
+        
+        .raw-responses {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+
+        .raw-response {
+            background: #f3f3f3;
+            border-radius: 8px;
+            padding: 18px 22px;
+
+            color: #333;
+
+            font-family: Georgia, "Times New Roman", serif;
+            font-size: 17px;
+            line-height: 1.55;
+        }
+
+        .raw-response p {
+            margin: 0;
+        }
+
+        
+
+
+        /* =========================
+           EXPLANATION BOX
+           ========================= */
+
+        .description {
+            background: #ccc;
+
+            border-radius: 8px;
+
+            min-height: 390px;
+            padding: 24px 14px;
+
+            color: #3f3f3f;
+
+            font-family: Arial, sans-serif;
+            font-size: 17px;
+            line-height: 1.55;
+        }
+        .page-navigation {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            margin-top: 35px;
+            padding: 20px 0 50px;
+        }
+
+        .previous-button,
+        .next-button {
+            padding: 12px 20px;
+            border-radius: 6px;
+
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            text-decoration: none;
+        }
+
+        .previous-button {
+            color: #555;
+            border: 1px solid #ccc;
+            background: white;
+        }
+
+        .next-button {
+            color: white;
+            background: #222;
+        }
+
+        .previous-button:hover {
+            background: #f3f3f3;
+        }
+
+        .next-button:hover {
+            background: #555;
+        }
+
+
+        /* =========================
+           RESPONSIVE
+           ========================= */
+
+        @media (max-width: 850px) {
+
+            .navbar {
+                align-items: flex-start;
+                flex-direction: column;
+            }
+
+            .nav-links {
+                gap: 10px 16px;
+            }
+
+            main {
+                width: calc(100% - 30px);
+                margin-top: 40px;
+            }
+
+            .section-content {
+                grid-template-columns: 1fr;
+                gap: 25px;
+            }
+
+            .description {
+                min-height: auto;
+            }
+
+            .survey-section h1 {
+                margin-left: 0;
+            }
+        }
+    
